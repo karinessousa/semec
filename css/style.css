@@ -1,0 +1,416 @@
+/*Principal*/
+body, html {
+	font-family: 'Raleway', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
+	font-weight: 300;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+h2 {
+	margin: 0 0 20px 0;
+	font-weight: 500;
+	font-size: 34px;
+	color: #333;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 22px;
+	font-weight: 500;
+	color: #333;
+}
+h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #333;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 16px;
+}
+
+a {
+	color: #8eb640;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #222;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+}
+
+hr {
+	height: 2px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	background: #8eb640;
+	margin: 0;
+	margin-bottom: 40px;
+	border: 0;
+}
+
+/* Navegação */
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+
+#menu.navbar-default {
+	background-color: rgba(9, 165, 61, 0.02);
+	border-color: rgba(231, 231, 231, 0);
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: rgb(3, 0, 0);
+	font-weight: 500;
+	font-size: 15px;
+	padding: 5px 0;
+	border: 2px solid transparent;
+	letter-spacing: 0.5px;
+	margin: 10px 15px 0 15px;
+}
+
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #75df67;
+}
+
+.on {
+	background-color: #3fa815 !important;
+	padding: 0 !important;
+	padding: 5px 0 15px 0 !important;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #8eb640;
+	border-color: #8eb640;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #9ce686 !important;
+	background-color: transparent;
+}
+
+/*Sessões*/
+.section-title .overlay {
+	padding: 80px 0 20px 0;
+	background: rgba(9, 41, 5, 0.644);
+}
+
+.section-title p {
+	font-size: 22px;
+	color: rgba(255,255,255,0.8);
+}
+
+.section-title hr {
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+/*Header*/
+.intro {
+	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 45em;
+}
+
+.intro1 {
+	background: url(../img/intro-bg1.jpg) no-repeat center center;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 20em;
+}
+
+@media screen and (max-width: 916px){
+	.intro1 {
+		display: none;
+	}
+	#menu {
+		display: none;
+	}
+	.on {
+		display: none;
+	}
+}
+
+header .intro-text {
+	padding-top: 250px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+
+/*Sobre*/
+
+#about {
+	padding: 120px 0;
+}
+#about h3 {
+	font-size: 20px;
+}
+#about p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+	text-align: center;
+}
+
+/*Programação*/
+#programacao {
+	padding: 0 0 1em 0;
+}
+
+#programacao .section-title {
+	background: #444 url(../img/palestra-bg.jpg) center center no-repeat fixed;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+#programacao .section-title h2 {
+	color: #fff;
+}
+
+.tabela {
+	overflow-x: auto;
+}
+
+.tabela p{
+	text-align: justify;
+}
+
+.tabela .tabelatr {
+	border-bottom: 2px solid #3ab30a;
+	border-radius: 5px;
+}
+
+.tabela td{
+	width: 20%;
+	padding: 1em 2em 1em 2em;
+}
+
+table {
+	margin: 3% 10%;
+}
+
+table img {
+	height: 5%;
+}
+
+/*Palestrantes*/
+
+#team {
+	color: #fff;
+	background: #444 url(../img/team-bg.jpg) center top no-repeat fixed;
+	background-size: cover;
+	text-align: center;
+}
+#team .overlay {
+	padding: 120px 0 80px 0;
+	background: rgba(9, 41, 5, 0.644);
+}
+#team h2, #team p {
+	color: #fff;
+	text-align: center;
+}
+#team hr {
+	background: #fff;
+}
+#team h3 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 5px 0;
+	text-align: center;
+}
+#team img {
+	width: 280px;
+	display: flex;
+	margin-left: 10%;
+	transform: translate(-50, -50);
+}
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+#team .thumbnail .team-img {
+	display: inline-block;
+	position: relative;
+}
+
+#team .thumbnail .team-img img{
+	border-radius: 1em;
+}
+
+#team .thumbnail .team-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+}
+#team .thumbnail .caption {
+	padding-top: 10px;
+}
+#team .thumbnail .caption p {
+	color: rgba(255,255,255,0.7);
+	padding: 0 10px;
+	font-size: 15px;
+}
+
+/*Inscrição*/
+#contact {
+	padding: 100px 0 60px 0;
+	background: #F6F6F6;
+}
+#contact .section-title p {
+	color: #777;
+}
+#contact form {
+	padding: 0;
+}
+#contact h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+	color: #555;
+}
+#contact .text-danger {
+	color: #cc0033;
+	text-align: left;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+}
+#contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #444;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ddd;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+#contact .form-control:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+color: #777;
+}
+.form-control:-moz-placeholder {
+color: #777;
+}
+.form-control::-moz-placeholder {
+color: #777;
+}
+.form-control:-ms-input-placeholder {
+color: #777;
+}
+#contact .contact-item {
+	margin: 20px 0 40px 0;
+}
+#contact .contact-item span {
+	font-weight: 400;
+	color: #aaa;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+#contact .contact-item p {
+	font-size: 16px;
+}
+
+.row .btn {
+	background: #4eb640;
+	color: #fff;
+	transition: scale(0.5, 2s);
+	transform: translate(-50%, -50%);
+	margin-left: 50%;
+	margin-top: 4em;
+}
+
+/*comoChegar*/
+#comoChegar {
+	margin: 3% 10%;
+	padding: 4%;
+}
+
+#map {
+	height: 350px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+#comoChegar .menu-section-title {
+	font-size: 26px;
+	display: block;
+	font-weight: 500;
+	color: #444;
+	margin: 20px 0;
+	text-align: center;
+}
+
+/*Patrocinadores*/
+#footer {
+	background: #bfffb7;
+	padding: 3% 0 0 0;
+}
+
+#tabela-f {
+	overflow-x: auto;
+}
+
+#footer img {
+	height: 5em;
+	margin-left: 1em;
+}
+
+#footer .copyrights {
+	padding: 20px 0;
+	margin-top: 50px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,8eb640+50 */
+	background: rgb(119,153,54); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#8eb640', GradientType=0 ); /* IE6-9 */
+}
+
+#footer p {
+	font-size: 15px;
+	color: rgb(255,255,255);
+	text-align: center;
+}
